@@ -1,0 +1,140 @@
+.heading{
+   /* text-align: center; */
+   padding: 20px;
+
+}
+.main{
+    background: rgb(255, 235, 238);
+    text-align: center;
+}
+h1{
+   margin-left: 30h;
+   padding: 20px;
+   font-size: 70px;
+}
+.contact{
+    color: white;
+    /* height: 70px; */
+    background: rgb(164, 65, 164);
+    padding: 10px;
+    width: 16vh;
+    font-size: 17px;
+    border: none;
+    margin-left: 2.5vh;
+    border-radius: 5px;
+
+}
+.contact:hover{
+    color: black;
+    border-radius: 22px;
+    background:pink;
+
+
+}
+.about-mission{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.text{
+    /* margin-top: 10px; */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.colimage{
+    padding: 10px;
+    gap: 5px;
+}
+
+.ab-image{
+    width: 60vh;
+    /* height: 35vh; */
+    /* margin: 10px; */
+    border-radius: 15px;
+}
+
+
+.imagediv{
+    display: flex;
+    margin: 20px;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.about-cor-image{
+    width: 100vw;
+    height: 90vh;
+    
+}
+.contain-about{
+margin: 0;
+}
+.twoimage{
+    display: flex;
+    /* padding-left: 20px; */
+    /* margin-left: 20px; */
+    /* margin: 20px; */
+    justify-content: center;
+    align-items: center;
+
+}
+.span2{
+    
+    
+} 
+.health{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.colfirst{
+    margin: 20px;
+    padding: 20px;
+}
+.colsecond{
+    margin: 20x;
+    padding: 20px;
+}
+.about-col{
+    margin-left: -30px;
+
+}
+.about-coltwo{
+    margin-right: 30px;
+}
+h2{
+    color: rgb(82, 73, 73);
+    font-size: 40px;
+}
+h3{
+    color: rgb(82, 73, 73);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+    padding: 20px;
+}
+.browse{
+    border: none;
+    font-size: 20px;
+    width: 30vh;
+    background: rgb(147, 33, 147);
+
+    height:40px ;
+    border-radius: 5px  ;
+    color: white;
+}
+.browse:hover{
+    color: black;
+    border-radius: 20px;
+    background: pink;
+
+}
+.about-main{
+    width: 100%;
+    /* height: 50%; */
+}
