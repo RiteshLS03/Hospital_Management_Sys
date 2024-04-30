@@ -9,7 +9,7 @@ const PORT = 8080;
 app.use(express.json());
 app.use(cors());
 
-// connecting db 
+// connecting db
 mongoose
   .connect("mongodb://localhost:27017/Pharma", {
     useNewUrlParser: true,
@@ -23,7 +23,7 @@ mongoose
     console.error("Error connecting to MongoDB:", err);
   });
 
-// fetch records on this route 
+// fetch records on this route
 function startServer() {
   app.get("/records", (req, res) => {
     MedicineModel.find({})
@@ -38,11 +38,11 @@ function startServer() {
       });
   });
 
-//   fetch age groups route
+  //   fetch age groups route
   app.get("/records/age_groups", (req, res) => {
     const { medicine } = req.query;
     MedicineModel.find({ medicine_name: medicine })
-      .distinct("age_group")
+      .distinct("age_group1")
       .then((ageGroups) => {
         res.json(ageGroups);
       })
@@ -75,13 +75,22 @@ function startServer() {
       });
   });
 
-//   save new record in db 
+  //   save new record in db
   app.post("/records/add_medicine", async (req, res) => {
-    const { medicineName, ageGroup, measure, description } = req.body;
+    const {
+      medicineName,
+      ageGroup1,
+      ageGroup2,
+      ageGroup3,
+      measure,
+      description,
+    } = req.body;
     try {
       const newMedicine = new MedicineModel({
         medicine_name: medicineName,
-        age_group: ageGroup,
+        age_group1: ageGroup1,
+        age_group2: ageGroup2,
+        age_group3: ageGroup3,
         measure: measure,
         medicine_description: description,
       });
@@ -94,7 +103,7 @@ function startServer() {
         .json({ error: "An error occurred while adding new medicine" });
     }
   });
-//  starting server on port 
+  //  starting server on port
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
