@@ -22,6 +22,9 @@ const Form = () => {
   const [disabled, setDisabled] = useState(false);
   const [description, setDescription] = useState("");
 
+  // Storing Fetched Data for Medicince Age Group
+  const [ageGroupDosage, setAgeGroupDosage] = useState([]);
+
   useEffect(() => {
     fetchMedicines();
   }, []);
@@ -36,6 +39,7 @@ const Form = () => {
       console.error("Error fetching medicines:", error);
     }
   };
+
   // fetching age group by selected medicine
   const fetchAgeGroups = async (medicineName) => {
     try {
@@ -43,7 +47,9 @@ const Form = () => {
         `http://localhost:8080/records/age_groups?medicine=${medicineName}`
       );
       const data = await response.json();
-      setAgeGroups(data);
+      const [{ age_group1, age_group2, age_group3 }] = data;
+      // setAgeGroups([age_group1, age_group2, age_group3]);
+      setAgeGroupDosage([age_group1, age_group2, age_group3]);
     } catch (error) {
       console.error("Error fetching age groups:", error);
     }
@@ -55,7 +61,7 @@ const Form = () => {
         `http://localhost:8080/records/measure?medicine=${medicineName}&ageGroup=${ageGroup}`
       );
       const data = await response.json();
-      setMeasure(data.measure);
+      // setMeasure(data.measure);
     } catch (error) {
       console.error("Error fetching measure:", error);
     }
@@ -74,9 +80,28 @@ const Form = () => {
   };
   //handle onchange of agegroup
   const handleAgeGroupChange = (e) => {
-    const selectedAgeGroup = e.target.value;
-    setSelectedAgeGroup(selectedAgeGroup);
-    fetchMeasure(selectedMedicine, selectedAgeGroup);
+    // const selectedAgeGroup = e.target.value;
+    // setSelectedAgeGroup(selectedAgeGroup);
+    // fetchMeasure(selectedMedicine, ageGroups);
+    // if (ageGroups[0] == "1-2 Years") {
+    //   setMeasure(ageGroupDosage[0]);
+    // } else if (ageGroups[1] == "2-5 Years") {
+    //   setMeasure(ageGroupDosage[1]);
+    // } else if (ageGroups[2] == "5-10 Years") {
+    //   setMeasure(ageGroupDosage[2]);
+    // }
+
+    // Chat GPT AI Code
+    const selectedAgeGroup = e.target.value; // Assuming e.target.value contains the selected age group string
+    const index = ageGroups.indexOf(selectedAgeGroup); // Find the index of the selected age group in the ageGroups array
+    if (selectedAgeGroup == "Custom") {
+      setMeasure(null);
+    } else if (index !== -1) {
+      setMeasure(ageGroupDosage[index]); // Set the measure based on the index found
+    } else {
+      // Handle case when selected age group is not found in the ageGroups array
+      // You can set a default measure or show an error message
+    }
   };
 
   // console.log(selectedMedicine)

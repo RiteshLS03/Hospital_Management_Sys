@@ -42,7 +42,8 @@ function startServer() {
   app.get("/records/age_groups", (req, res) => {
     const { medicine } = req.query;
     MedicineModel.find({ medicine_name: medicine })
-      .distinct("age_group1")
+      // .distinct("age_Group")
+      .select(["age_group1", "age_group2", "age_group3"])
       .then((ageGroups) => {
         res.json(ageGroups);
       })
@@ -57,7 +58,12 @@ function startServer() {
   //   fetch age measure/dosage
   app.get("/records/measure", (req, res) => {
     const { medicine, ageGroup } = req.query;
-    MedicineModel.findOne({ medicine_name: medicine, age_group: ageGroup })
+    MedicineModel.findOne({
+      medicine_name: medicine,
+      age_group1: ageGroup1,
+      age_group2: ageGroup2,
+      age_group3: ageGroup3,
+    })
       .then((medicine) => {
         if (medicine) {
           res.json({ measure: medicine.measure });
