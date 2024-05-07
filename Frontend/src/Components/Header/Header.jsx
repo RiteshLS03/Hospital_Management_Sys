@@ -110,7 +110,12 @@ const Header = () => {
                 className="nav-link active me-auto mb-2 mb-lg-0 text-light nav-item"
                 aria-current="page"
               >
-                <Link to="/Form">Form</Link>
+                <Link
+                  className="nav-link active me-auto mb-2 mb-lg-0 text-light"
+                  to="/Form"
+                >
+                  Form
+                </Link>
               </li>
             </ul>
 
