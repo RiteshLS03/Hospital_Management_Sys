@@ -1,0 +1,55 @@
+
+
+#appointment {
+    width: 100%;
+    height: 100vh;
+    background: rgb(249, 210, 249);
+  }
+ 
+  .appointment .php-email-form  .form-group {
+    padding-bottom: 8px;
+  }
+  
+  
+  .appointment .php-email-form input, .appointment .php-email-form textarea, .appointment .php-email-form select {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px !important;
+  }
+  input[type="text-one"]{
+    width:30vw;
+    
+  }
+  
+  .appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
+    border-color: #1977cc;
+  }
+  
+  .appointment .php-email-form input, .appointment .php-email-form select {
+    height: 64px;
+    width: 20vw;
+    border: 2px solid brown;
+  }
+  
+  .appointment .php-email-form textarea {
+    padding: 10px 12px;
+    margin-top: 30px;
+    width: 63vw;
+    border: 2px solid brown;
+    height: 30vh;
+  }
+  
+  .appointment .php-email-form button[type="submit"] {
+    background: #750b7c;
+    margin-top: 30px;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .appointment .php-email-form button[type="submit"]:hover {
+    background: #c757d1;
+  }

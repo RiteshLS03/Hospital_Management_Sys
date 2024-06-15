@@ -1,0 +1,81 @@
+.hero-image{
+    width: 100vw;
+}
+.appointment{
+    border: none;
+    width: 10vw;
+    height: 3rem;
+    margin: 20px;
+    color: black;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: tomato;
+}
+.appointment:hover{
+    color: white;
+    background: rgb(38, 137, 127);
+    border-radius: 20px;
+}
+.ashtma-img{
+    border-radius: 10px;
+    width: 40vw;
+    margin-left: 30px;
+}
+.ashtma-head{
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.asthma-msg{
+        gap: 20vh;
+        padding-top: 20vh;
+}
+.type-of{
+    font-size: 30px;
+    margin-left: 50px;
+    color: brown;
+}
+.ashtma-para{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: -20px;
+}
+.ul-list{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.li-style{
+    line-height: 5vh;
+}
+.consider{
+    margin-left: 50px;
+    color: brown;
+    font-size: 20px;
+}
+.paraofashtma{
+    font-size: 20px;
+    margin-left: 30px;
+    
+}
+.accordians{
+    background: rgb(222, 120, 223);
+    
+}
+.accordion{
+    width: 90vw !important;
+    margin: 50px auto;
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18) !important;
+}
+.question{
+    color: teal;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.head-of-accordian{
+    color:brown ;
+}
+.head-of-accordian:hover{
+    color: red;
+}

@@ -1,0 +1,11 @@
+/* some basic styling i ahve use bottstarp for UI and sewwtalert for popup */
+.formdiv{
+    /* height: 40vh; */
+    margin: 5% 0;
+}
+.newmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

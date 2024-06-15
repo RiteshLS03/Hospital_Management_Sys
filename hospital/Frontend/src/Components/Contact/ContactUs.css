@@ -1,0 +1,114 @@
+.col-footer-frist{
+    font-size: 35px;
+    margin: 20px;
+}
+.six{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+.smallfooter{
+    margin-left: 45vh;
+    text-align: justify;
+}
+.largefooter{
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.aurangabad{
+    margin-top: -20px;
+}
+
+.enquiryone{
+    
+   text-align: center;
+   color: black;
+   font-size: 30px;
+   /* align-items: center; */
+}
+
+.contact-another{
+    margin-top: 30px;
+    background: rgb(250, 185, 236);
+}
+.msgcontact{
+    font-size: 20px;
+    text-align: center;
+    
+}
+.main-contact-session{
+    background: white;
+}
+.enquiry-head{
+    color: black;
+}
+input[type="text"]{
+    height:60px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 25vw;
+    border: 2px solid grey;
+}
+input[type="subject"]{
+    height:60px;
+    margin: 20px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.textarea-contact{
+    width: 60vw;
+    border-radius: 5px;
+    height: 20vh;
+    margin: 20px;
+    padding:20px;
+}
+.contact-button{
+    width: 20vh;
+    height: 50px;
+    border-radius: 5px;
+    margin: 20px;
+    border: none;
+    color: white;
+    background: rgb(55, 17, 192);
+}
+.contact-button:hover{
+    color: black;
+    border: 2px solid brown;
+    border-radius: 20px;
+    background: rgb(253, 201, 253);
+}
+.need-help{
+    background:whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.need-para{
+    color: black;
+    /* margin-left: 50px; */
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.need-head{
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+}
+.contact-button{
+    color: black;
+    margin-top: 90px;
+    text-align: center;
+
+    background: white;
+
+}
+.contact-button:hover{
+    background: blue;
+    color: white;
+}

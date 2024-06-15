@@ -1,0 +1,24 @@
+.hero-disease{
+    height: 70vh;
+    margin-top: 30px;
+    margin-left: 10vh;
+    width: 90vw;
+}
+.headdisease{
+    margin-left: 50px;
+    margin-top: 20px;
+    color: brown;
+}
+.infection{
+    font-size: 30px;
+    color: purple;
+    margin-bottom: -20px;
+    margin-left: 30px;
+}
+.appointment{
+    margin-left: 50px;
+}
+.damy-text{
+    font-size: 20px;
+    margin-left: 40px;
+}

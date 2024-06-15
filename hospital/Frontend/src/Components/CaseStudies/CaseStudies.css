@@ -1,0 +1,82 @@
+.case{
+    margin-top: 40px;
+    background: rgb(250, 240, 242);
+}
+.careimage{
+    width: 20vw;
+    margin-left: 200px;
+}
+.carehead{
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    font-size: 50px;
+    /* margin: 30px; */
+    text-align: right;
+    padding: 20px;
+}
+.caremsg{
+    color: black;
+    font-size: 20px;
+    /* margin: 20px; */
+    padding: 20px;
+    text-align: right;
+}
+.book-button{
+    padding: 10px;
+    border: none;
+     border-radius: 20px;
+
+    color: white;
+    background: red;
+}
+.book-button:hover{
+    color: black;
+    background: transparent;
+}
+.turining{
+    color: brown;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.anothermsg{
+    font-size: 20px;
+    text-align: center;
+}
+.babythree{
+    width: 90%;
+    margin-left: 5vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+.babysecond{
+    width: 90%;
+    height: 70vh;
+    margin-top: 20px;
+    margin-left: 5vw;
+    border-radius: 20px;
+}
+.babysix{
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 5vw;
+    width: 90%;
+    height: 70vh;
+}
+.babyseven{
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 5vw;
+    width: 90%;
+    height: 70vh;
+}
+.meet-children{
+    color: brown;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.meet-button{
+    color: brown;
+    border: none;
+    text-align: center;
+}

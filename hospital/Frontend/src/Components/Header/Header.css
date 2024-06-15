@@ -1,0 +1,91 @@
+.header-design{
+    box-shadow: 10px 15px 16px 8px rgb(203, 180, 180);
+    /* border-radius: 60px; */
+    height: 15vh;
+    background: rgb(131, 67, 131);
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+.span{
+    position:relative;
+    top:30px;
+    left: 20px;
+}
+.nav-link{
+    font-weight:300;
+    font-size: 25px;
+}
+.inputdesign{
+    text-align: center;
+    outline:grey;
+    color: white;
+    border: 2px solid red;
+}
+.inputdesign:hover{
+    border: 2px solid red;
+}
+.number{
+    display: inline-block;
+    border: 2px solid red;
+    height: 20px;
+    
+}
+.mainheader{
+    padding: 20px;
+    margin: 20px;
+}
+.button-header{
+    color:white;
+     border: 2px solid red;
+    background-color:white;
+    background: purple;
+    font-size: 20px;
+    height: 60px;
+    /* padding: 15px; */
+    border-radius: 5px;
+}
+.button-header:hover{
+    background: red;
+    color: black;
+}
+.call{
+    color: red;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin-right:5px;
+    padding: 15px;
+    
+}
+.header-logo{
+     border-radius: 50px;
+    width: 90px;
+ }
+.dropdown-menu{
+    width: 10vw;
+    padding: 10px;
+}
+.menu-drop{
+    width: 20vw;
+    border: 2px solid brown;
+}
+.menu-drop:hover{
+    color: brown;
+}
+.nikita{
+    background: purple;
+    padding: 20px;
+}
+@media(max-width:1280px){
+
+    .nav-link{
+        font-size: 20px;
+    }
+    .button-header{
+        font-size: 20px;
+    }
+    .inputdesign{
+        font-size: 20px;
+    }
+}
