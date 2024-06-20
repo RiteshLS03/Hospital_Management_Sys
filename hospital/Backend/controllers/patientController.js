@@ -39,7 +39,7 @@ exports.addPatient = asyncHandler(async (req, res) => {
       });
       newPatient.save();
     }
-    console.log(patientExist);
+    // console.log(patientExist);
   } catch (error) {
     res.status(500).json({ message: "Failed to add patient" });
   }
